@@ -1,0 +1,42 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+​ h1,
+h2,
+h3 {
+  font-family: 'Lobster', cursive;
+}
+.mainTitle {
+  font-family: 'Lobster', cursive;
+}
+​ h2 {
+  color: #3046c5;
+}
+​ header h2 {
+  color: #cec8ff;
+}
+​ footer,
+.footer {
+  background-image: linear-gradient(white, #b1e4be);
+  padding: 20px 0;
+}
+​ .jumbotron,
+.jumbotron-fluid {
+  margin-bottom: 0;
+  padding: 30px;
+  background-image: linear-gradient(to right, #90dca3, #b1e4be, #fcfcfc);
+  color: white;
+}
+/* header {
+  padding: 30px;
+  background-image: linear-gradient(to right, #105709, #256b2e, #4f9561);
+  color: white;
+} */
+​ .row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px;
+}
+.navbar {
+  background-color: #58a06a;
+}
