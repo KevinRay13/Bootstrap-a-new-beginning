@@ -8,16 +8,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./contactus_files/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
 
     <!-- Additional CSS must be placed after Bootstrap CSS -->
-    <link rel="stylesheet" href="./contactus_files/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
     <link
       rel="stylesheet"
       href="node_modules/bootstrap-social/bootstrap-social.css"
     />
     <link rel="stylesheet" href="./contactus_files/css" />
-    <link rel="stylesheet" href="./contactus_files/styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
 
     <title>NuCamp: A Better Way To Camp</title>
   </head>
@@ -47,30 +53,22 @@
         <div class="collapse navbar-collapse" id="nucampNavbar">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://learn.nucamp.co/pluginfile.php/19013/mod_book/chapter/3108/index.html"
+              <a class="nav-link" href="index.html"
                 ><i class="fa fa-home fa-lg"></i> Home</a
               >
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://learn.nucamp.co/pluginfile.php/19013/mod_book/chapter/3108/aboutus.html"
+              <a class="nav-link" href="aboutus.html"
                 ><i class="fa fa-info fa-lg"></i> About</a
               >
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://learn.nucamp.co/pluginfile.php/19013/mod_book/chapter/3108/contactus.html#"
+              <a class="nav-link" href="#"
                 ><i class="fa fa-list fa-lg"></i> Sites</a
               >
             </li>
             <li class="nav-item active">
-              <a
-                class="nav-link"
-                href="https://learn.nucamp.co/pluginfile.php/19013/mod_book/chapter/3108/contactus.html#"
+              <a class="nav-link" href="contactus.html"
                 ><i class="fa fa-address-card fa-lg"></i> Contact</a
               >
             </li>
@@ -84,10 +82,7 @@
         <div class="col">
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
-              <a
-                href="https://learn.nucamp.co/pluginfile.php/19013/mod_book/chapter/3108/index.html"
-                >Home</a
-              >
+              <a href="index.html">Home</a>
             </li>
             <li class="breadcrumb-item active">Contact</li>
           </ol>
@@ -124,7 +119,115 @@
           <hr />
         </div>
         <div class="col-md-10">
-          Form goes here
+          <form>
+            <div class="form-group row">
+              <label for="firstName" class="col-md-2 col-form-label"
+                >First Name</label
+              >
+              <div class="col-md-10">
+                <input
+                  type="text"
+                  class="form-control is-valid"
+                  id="firstName"
+                  name="firstName"
+                  placeholder="First Name"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="lastName" class="col-md-2 col-form-label"
+                >Last Name</label
+              >
+              <div class="col-md-10">
+                <input
+                  type="text"
+                  class="form-control is-valid"
+                  id="lastName"
+                  name="lastName"
+                  placeholder="Last Name"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="areaCode" class="col-md-2 col-form-label"
+                >Contact Tel.</label
+              >
+              <div class="col-5 col-md-3">
+                <input
+                  type="tel"
+                  class="form-control is-valid"
+                  id="areaCode"
+                  name="areaCode"
+                  placeholder="Area code"
+                />
+              </div>
+              <div class="col-7">
+                <input
+                  type="tel"
+                  class="form-control is-valid"
+                  name="telNum"
+                  placeholder="Tel. number"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="email" class="col-md-2 col-form-label">Email</label>
+              <div class="col-md-10">
+                <input
+                  type="email"
+                  class="form-control is-valid"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col offset-md-2">
+                May we contact you?
+                <div class="form-check form-check-inline">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="contactYes"
+                    name="contactRadios"
+                    value="yes"
+                  />
+                  <label for="contactYes" class="form-check-label">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    type="radio"
+                    class="form-check-input "
+                    id="contactNo"
+                    name="contactRadios"
+                    value="no"
+                  />
+                  <label for="contactNo" class="form-check-label ">No</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="feedback" class="col-md-2 col-form-label "
+                >Your Feedback</label
+              >
+              <div class="col-md-10">
+                <textarea
+                  class="form-control is-valid"
+                  id="feedback"
+                  name="feedback"
+                  rows="8"
+                ></textarea>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="offset-md-2 col-md-10">
+                <button type="submit" class="btn btn-outline-success">
+                  Send Feedback
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
