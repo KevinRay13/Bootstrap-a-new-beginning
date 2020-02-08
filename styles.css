@@ -19,6 +19,7 @@ h3 {
 .footer {
   background-image: linear-gradient(white, #b1e4be);
   padding: 20px 0;
+  width: 100vw;
 }
 ​ .jumbotron,
 .jumbotron-fluid {
@@ -39,4 +40,7 @@ h3 {
 }
 .navbar {
   background-color: #58a06a;
+}
+.tableClass {
+  margin: 0 auto;
 }
