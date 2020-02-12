@@ -9,8 +9,9 @@ h3 {
 .mainTitle {
   font-family: 'Lobster', cursive;
 }
-​ h2 {
-  color: #3046c5;
+​ .card-header,
+.bg-info {
+  background-color: #58a06a !important;
 }
 ​ header h2 {
   color: #cec8ff;
@@ -25,7 +26,7 @@ h3 {
 .jumbotron-fluid {
   margin-bottom: 0;
   padding: 30px;
-  background-image: linear-gradient(to right, #90dca3, #b1e4be, #fcfcfc);
+  background-image: linear-gradient(to right, #58a06a, #89c999, #fcfcfc);
   color: white;
 }
 /* header {
@@ -43,4 +44,9 @@ h3 {
 }
 .tableClass {
   margin: 0 auto;
+}
+.tab-content {
+  border: 1px solid #ddd;
+  border-top: none;
+  padding: 10px;
 }
