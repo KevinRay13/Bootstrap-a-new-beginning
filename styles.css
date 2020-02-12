@@ -45,3 +45,6 @@ h3 {
 .tableClass {
   margin: 0 auto;
 }
+a{
+  cursor: pointer;
+}
